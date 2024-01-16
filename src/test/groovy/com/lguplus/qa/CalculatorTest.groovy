@@ -5,8 +5,6 @@ import spock.lang.Specification
 class CalculatorTest extends Specification {
     def "Add"() {
         given:
-        int a = 5
-        int b = 7
         Calculator cal = new Calculator()
 
         when:
@@ -14,5 +12,9 @@ class CalculatorTest extends Specification {
 
         then:
         result == 12
+
+        where:
+        a | b
+        5 | 7
     }
 }
