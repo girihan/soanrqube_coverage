@@ -15,6 +15,6 @@ class CalculatorTest extends Specification {
 
         where:
         a | b
-        5 | 7
+        5 | 4
     }
 }
